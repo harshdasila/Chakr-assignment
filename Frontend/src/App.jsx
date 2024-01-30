@@ -22,20 +22,20 @@ function App() {
             <LostDeals/>
             <QuaterGoal/>
           </div>
-          <div className='flex gap-[16px] h-[400px]'>
+          <div className='flex gap-[16px] h-[397px]'>
             <Customers/>
             <div className='w-[557px] h-[400px] mt-[1rem]'>
               <div>
                 <Growth/>
               </div>
-              <div className='flex h-[128] gap-[16px]'>
+              <div className='flex h-[128px] gap-[16px]'>
                 <DateCard heading="Top month" time="November" subHeading="2019" subHeadingColor={'#FFA500'}/>
                 <DateCard heading="Top year" time="2023" subHeading="96k sold so far" subHeadingColor={'#454545'}/>
                 <Topbuyer/>
               </div>
             </div>
           </div>
-          <div className='flex h-[256px] gap-[16px] mt-[35px]'>
+          <div className='flex h-[256px] gap-[16px] mt-[31px]'>
             <Chats/>
             <States/>
             <NewDeals/>

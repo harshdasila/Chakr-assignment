@@ -7,8 +7,8 @@ const Leftpanel = () => {
     <div>
       <div className='relative w-[280px] h-[890px] border-t-0 border-r-1 border-b-0 border-l-0 rounded-[16px] bg-[#FFFFFF]'>
           
-          <div className='h-[68px] pt-[16px] pr-[24px] pb-[12px] pl-[24px] gap-[24px] flex'>
-          <svg width="149" height="40" viewBox="0 0 149 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div className='h-[68px] pt-[16px] pr-[24px] pb-[12px] pl-[24px] gap-[8px] flex'>
+            <svg width="149" height="40" viewBox="0 0 149 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_2238_104)">
 <ellipse cx="10.4" cy="20" rx="10.4" ry="10.4959" fill="#FFA500"/>
 <ellipse opacity="0.6" cx="7.06439" cy="6.10078" rx="7.06439" ry="6.10078" transform="matrix(0.834795 -0.550561 0.54352 0.839396 -3.0271 14.4007)" fill="url(#paint0_radial_2238_104)"/>
@@ -47,64 +47,69 @@ const Leftpanel = () => {
             </div>
           </div>
 
-          <div className='rounded-[24px] h-[40px]   pt-[12px] pr-[20px] pb-[12px] pl-[20px] gap-[12px] flex items-center'>
+          <div className='rounded-[24px] h-[40px] pt-[12px] pr-[20px] pb-[12px] pl-[20px] gap-[12px] flex items-center'>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M6.66666 2.66666L9.33332 13.3333M7.99999 7.99999L2.66666 9.33332M2.66666 3.99999C2.66666 3.64637 2.80713 3.30723 3.05718 3.05718C3.30723 2.80713 3.64637 2.66666 3.99999 2.66666H12C12.3536 2.66666 12.6928 2.80713 12.9428 3.05718C13.1928 3.30723 13.3333 3.64637 13.3333 3.99999V12C13.3333 12.3536 13.1928 12.6928 12.9428 12.9428C12.6928 13.1928 12.3536 13.3333 12 13.3333H3.99999C3.64637 13.3333 3.30723 13.1928 3.05718 12.9428C2.80713 12.6928 2.66666 12.3536 2.66666 12V3.99999Z" stroke="#FFA500" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
           <button className='text-sm'>Dashboard</button>
           </div>
-          <div className='rounded-[24px] h-[40px]  pt-[12px] pr-[20px] pb-[12px] pl-[20px] gap-[12px] flex items-center'>
+          <div className='rounded-[24px] h-[40px] my-[8px]  pt-[12px] pr-[20px] pb-[12px] pl-[20px] gap-[12px] flex items-center'>
             <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M2 14.5V13.1667C2 12.4594 2.28095 11.7811 2.78105 11.281C3.28115 10.781 3.95942 10.5 4.66667 10.5H7.33333C8.04058 10.5 8.71885 10.781 9.21895 11.281C9.71905 11.7811 10 12.4594 10 13.1667V14.5M10.6667 2.58667C11.2403 2.73354 11.7487 3.06714 12.1118 3.53488C12.4748 4.00262 12.6719 4.57789 12.6719 5.17C12.6719 5.76212 12.4748 6.33739 12.1118 6.80513C11.7487 7.27287 11.2403 7.60647 10.6667 7.75334M14 14.5V13.1667C13.9966 12.5781 13.7986 12.0072 13.4368 11.5429C13.0751 11.0787 12.5699 10.7471 12 10.6M3.33333 5.16667C3.33333 5.87391 3.61428 6.55219 4.11438 7.05229C4.61448 7.55238 5.29276 7.83333 6 7.83333C6.70724 7.83333 7.38552 7.55238 7.88562 7.05229C8.38572 6.55219 8.66667 5.87391 8.66667 5.16667C8.66667 4.45942 8.38572 3.78115 7.88562 3.28105C7.38552 2.78095 6.70724 2.5 6 2.5C5.29276 2.5 4.61448 2.78095 4.11438 3.28105C3.61428 3.78115 3.33333 4.45942 3.33333 5.16667Z" stroke="#7D7D7D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <button className='text-sm left-[4px] top-[6px]'>Customers </button> 
             <button className="relative arrow down right-[-5.3rem]"></button>
           </div>
-          <div className='rounded-[24px] h-[40px]  pt-[12px] pr-[20px] pb-[12px] pl-[20px] gap-[12px] flex items-center'>
+          <div className='rounded-[24px] h-[40px] my-[8px] pt-[12px] pr-[20px] pb-[12px] pl-[20px] gap-[12px] flex items-center'>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M6.00001 3.33333H4.66668C4.31305 3.33333 3.97392 3.47381 3.72387 3.72386C3.47382 3.97391 3.33334 4.31304 3.33334 4.66667V12.6667C3.33334 13.0203 3.47382 13.3594 3.72387 13.6095C3.97392 13.8595 4.31305 14 4.66668 14H11.3333C11.687 14 12.0261 13.8595 12.2762 13.6095C12.5262 13.3594 12.6667 13.0203 12.6667 12.6667V4.66667C12.6667 4.31304 12.5262 3.97391 12.2762 3.72386C12.0261 3.47381 11.687 3.33333 11.3333 3.33333H10M6.00001 3.33333C6.00001 2.97971 6.14049 2.64057 6.39053 2.39052C6.64058 2.14048 6.97972 2 7.33334 2H8.66668C9.0203 2 9.35944 2.14048 9.60949 2.39052C9.85953 2.64057 10 2.97971 10 3.33333M6.00001 3.33333C6.00001 3.68696 6.14049 4.02609 6.39053 4.27614C6.64058 4.52619 6.97972 4.66667 7.33334 4.66667H8.66668C9.0203 4.66667 9.35944 4.52619 9.60949 4.27614C9.85953 4.02609 10 3.68696 10 3.33333M6.00001 11.3333V8.66667M8.00001 11.3333V10.6667M10 11.3333V10" stroke="#7D7D7D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <button className='text-sm'>All Reports</button>
           </div>
-          <div className='rounded-[24px] h-[40px]  pt-[12px] pr-[20px] pb-[12px] pl-[20px] gap-[12px] flex items-center'>
+          <div className='rounded-[24px] h-[40px] my-[8px] pt-[12px] pr-[20px] pb-[12px] pl-[20px] gap-[12px] flex items-center'>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.39998 6H13.6M2.39998 10H13.6M7.66669 2C6.54358 3.79974 5.94816 5.87858 5.94816 8C5.94816 10.1214 6.54358 12.2003 7.66669 14M8.33333 2C9.45644 3.79974 10.0519 5.87858 10.0519 8C10.0519 10.1214 9.45644 12.2003 8.33333 14M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z" stroke="#7D7D7D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
           <button className='text-sm'>Geography</button>
           </div>
-          <div className='rounded-[24px] h-[40px]  pt-[12px] pr-[20px] pb-[12px] pl-[20px] gap-[12px] flex items-center'>
+          <div className='rounded-[24px] h-[40px] my-[8px]  pt-[12px] pr-[20px] pb-[12px] pl-[20px] gap-[12px] flex items-center'>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M2 13.3333L2.86667 10.7333C1.31733 8.442 1.916 5.48533 4.26667 3.81733C6.61733 2.15 9.99333 2.28666 12.1633 4.13733C14.3333 5.98866 14.6267 8.98133 12.8493 11.138C11.072 13.2947 7.77267 13.948 5.13333 12.6667L2 13.3333Z" stroke="#7D7D7D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <button className='text-sm'>Conversations</button>
           </div>
-          <div className='rounded-[24px] h-[40px]  pt-[12px] pr-[20px] pb-[12px] pl-[20px] gap-[12px] flex items-center'>
+          <div className='rounded-[24px] h-[40px] my-[8px] pt-[12px] pr-[20px] pb-[12px] pl-[20px] gap-[12px] flex items-center'>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M11.3333 6.66666L10 2.66666M4.66667 6.66666L6 2.66666M7.33331 13.3333H4.82931C4.35158 13.3333 3.88963 13.1623 3.52707 12.8512C3.1645 12.5401 2.92526 12.1095 2.85265 11.6373L2.01598 6.86933C1.98676 6.67932 1.99897 6.48524 2.05178 6.30039C2.1046 6.11554 2.19676 5.9443 2.32194 5.7984C2.44713 5.6525 2.60239 5.5354 2.77708 5.45513C2.95176 5.37486 3.14174 5.33331 3.33398 5.33333H12.6666C12.8589 5.33331 13.0489 5.37486 13.2236 5.45513C13.3982 5.5354 13.5535 5.6525 13.6787 5.7984C13.8039 5.9443 13.896 6.11554 13.9488 6.30039C14.0017 6.48524 14.0139 6.67932 13.9846 6.86933L13.6653 8.68866M10 12.6667L11.3333 14L14 11.3333M6.66667 9.33333C6.66667 9.68695 6.80714 10.0261 7.05719 10.2761C7.30724 10.5262 7.64638 10.6667 8 10.6667C8.35362 10.6667 8.69276 10.5262 8.94281 10.2761C9.19286 10.0261 9.33333 9.68695 9.33333 9.33333C9.33333 8.97971 9.19286 8.64057 8.94281 8.39052C8.69276 8.14047 8.35362 8 8 8C7.64638 8 7.30724 8.14047 7.05719 8.39052C6.80714 8.64057 6.66667 8.97971 6.66667 9.33333Z" stroke="#7D7D7D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <button className='text-sm'>Deals</button>
           </div>
-          <div className='rounded-[24px] h-[40px]  pt-[12px] pr-[20px] pb-[12px] pl-[20px] gap-[12px] flex items-center'>
+          <div className='rounded-[24px] h-[40px] my-[8px] pt-[12px] pr-[20px] pb-[12px] pl-[20px] gap-[12px] flex items-center'>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M2.66666 4C2.66666 5.10467 5.05466 6 7.99999 6C10.9453 6 13.3333 5.10467 13.3333 4M2.66666 4C2.66666 2.89533 5.05466 2 7.99999 2C10.9453 2 13.3333 2.89533 13.3333 4M2.66666 4V8M13.3333 4V8M2.66666 8C2.66666 9.10467 5.05466 10 7.99999 10C8.74532 10 9.45532 9.94267 10.1 9.83933M2.66666 8V12C2.66666 13.1047 5.05466 14 7.99999 14C8.10466 14 8.20799 13.9987 8.31066 13.9967M10.6667 12.6667H14.6667M14.6667 12.6667L12.6667 10.6667M14.6667 12.6667L12.6667 14.6667" stroke="#7D7D7D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <button className='text-sm'>Export</button>
           </div>
-          <button className="relative arrow left left-[17rem] top-[17.5rem]"></button>
+
+         {/* <div className='relative rounded-[8px] p-[4px]  left-[267px] top-[12.5rem]'>
+          
+         </div> */}
+         <button className="absolute  w-[10px] h-[10px] bg-[#F6F6F3] arrow left left-[276px] top-[42.5rem]"></button>
+          
           </div>
           <div className='bottom-container absolute  h-[180px] w-[280px] bottom-0  pt-[16px] pr-[8px] pb-[24px] pl-[8px] gap-[12px]'>
             <div className='flex h-[40px] w-[264px]  pt-[0px] pr-[20px] pb-[0px] pl-[20px] gap-[12px]'>
               <div className='flex items-center justify-center'>
                 <img className='w-[32px] h-[32px] rounded-[24px]' src={personImage} alt="Person" />
               </div>
-              <div className='w-[98px] h-[37px] gap-[4px]'>
+              <div className=' w-[98px] h-[37px] m-[4px]'>
                 <div className='font-medium w-[108px] h-[17px] text-[14px] leading-[16.94px]'>Gustavo Xavier</div>
-                <div className='bg-[#FFCD71] gap-[8px] h-[16px] w-[40px]  pt-[0px] pr-[6px] pb-[0px] pl-[6px] rounded-[24px]'>
+                <div className='bg-[#FFCD71] gap-[8px] h-[16px] w-[40px]  pt-[0px] pr-[6px] pb-[0px] pl-[6px] rounded-[24px] mt-1'>
                   <div className='w-[28px] h-[16px] text-[10px] leading-[16px]'>Admin</div>
                 </div>
               </div>
             </div>
-            <div className='gap-[2px]'>
+            <div className='gap-[2px] mt-[16px]'>
               <div className='flex w-[264px] h-[40px]  pt-[12px] pr-[20px] pb-[12px] pl-[20px] gap-[12px]'>
                 <div className='flex justify-center items-center'>
                   <svg  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

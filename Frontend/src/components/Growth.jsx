@@ -106,7 +106,7 @@ const Graph = () => {
           line: {
             borderWidth: 1,
             fill: true,
-            borderDash: [5, 5], // Set borderDash to create a dotted line [dash length, gap length]
+            borderDash: [5, 5], 
           },
         },
         plugins: {
@@ -116,9 +116,6 @@ const Graph = () => {
         },
       },
     };
-    
-  
-    // Create a new chart instance
     const newChartInstance = new Chart(ctx, chartConfig);
     setChartInstance(newChartInstance);
   };
@@ -127,15 +124,14 @@ const Graph = () => {
     setDisplayType(selectedType);
   };
   return (
-    <div className='w-[557px] h-[266px] rounded-[16px] p-[20px] gap-[8px] bg-[#FFFFFF]'>
+    <div className='w-[557px] h-[256px] rounded-[16px] p-[20px] gap-[8px] bg-[#FFFFFF]'>
       <div className='flex justify-between'>
       <div className='font-[600] text-[20px] leading-[24.2px]'>GROWTH</div>
-      <select className='relative ' id="displayType" value={displayType} onChange={(e) => handleToggle(e.target.value)}>
+      <select className='' id="displayType" value={displayType} onChange={(e) => handleToggle(e.target.value)}>
         <option value="yearly">Yearly</option>
         <option value="monthly">Monthly</option>
       </select>
       </div>
-     
       
       <div className='h-[232px]'>
       <canvas id="myChart" />

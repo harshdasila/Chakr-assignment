@@ -12,7 +12,7 @@ const Chats = () => {
                 2 unread messages
             </div>
         </div>
-        <div className='flex relative h-[56px] gap-[8px] w-[272px]  top-7'>
+        <div className='flex relative h-[56px] gap-[8px] w-[272px]  top-[0.7rem]'>
             <div className='flex relative w-[56px] h-[56px] rounded-[16px] p-[12px] gap-[8px] bg-[#FFF7E8]'>
                 <img className='flex justify-center items-center rounded-full' src={userData[2].imageUrl}></img>
                 <div className='absolute w-[5px] h-[5px] border-[1px] border-[#FFF7E8] bg-[#EB5050] rounded-full top-[15px] right-[13px]'></div>
