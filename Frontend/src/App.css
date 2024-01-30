@@ -1,0 +1,21 @@
+
+.arrow {
+    border: solid #7D7D7D;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 8px;
+    height: 4px;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  .gradient-color{
+    background: linear-gradient(90deg, #FFCD71 -2.57%, rgba(255, 205, 113, 0) 112.5%);
+
+  }
