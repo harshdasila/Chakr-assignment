@@ -2,11 +2,12 @@ const express = require('express');
 const cors = require('cors')
 const fs = require('fs');
 const csv = require('csv-parser');
-app.use(cors());
+
 
 const app = express();
 const port = 3001;
 const datasetPath = './dataset.csv'; 
+app.use(cors());
 
 app.use(express.json());
 
