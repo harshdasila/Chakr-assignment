@@ -9,18 +9,16 @@ const Graph = () => {
   const [displayType, setDisplayType] = useState('yearly');
 
   useEffect(() => {
-    // Fetch downsampled data from the backend
-    fetch('http://localhost:3001/api/downsampled-data')
+   
+    fetch('https://chakr-assignment-deploy.onrender.com/api/downsampled-data')
       .then(response => response.json())
       .then(data => {
         setDownsampledData(data);
 
-        // Destroy existing chart before creating a new one
         if (chartInstance) {
           chartInstance.destroy();
         }
 
-        // Create a new chart based on displayType
         createChart(data, displayType);
       })
       .catch(error => console.error('Error fetching downsampled data:', error));
@@ -31,7 +29,7 @@ const Graph = () => {
         chartInstance.destroy();
       }
     };
-  }, [displayType]);  // Depend on displayType to re-run effect when it changes
+  }, [displayType]);
 
   const createChart = (data, type) => {
     const ctx = document.getElementById('myChart');
@@ -47,7 +45,7 @@ const Graph = () => {
   
         return label;
       }),
-      // Inside createChart function
+
       datasets: [
         {
           label: 'Profit Percentage',
@@ -86,8 +84,7 @@ const Graph = () => {
             },
             ticks: {
               autoSkip: true,
-              maxTicksLimit: 10, // Adjust the max number of ticks as needed
-              // stepSize: Math.ceil(data.length / 10), // Specify stepSize based on the data length
+              maxTicksLimit: 10, 
             },
           },
           y: {

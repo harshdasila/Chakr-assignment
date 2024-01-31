@@ -1,6 +1,8 @@
 const express = require('express');
+const cors = require('cors')
 const fs = require('fs');
 const csv = require('csv-parser');
+app.use(cors());
 
 const app = express();
 const port = 3001;
