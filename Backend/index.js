@@ -4,7 +4,7 @@ const csv = require('csv-parser');
 
 const app = express();
 const port = 3001;
-const datasetPath = './dataset.csv';  // Provide the correct file path
+const datasetPath = './dataset.csv'; 
 
 app.use(express.json());
 
@@ -26,8 +26,8 @@ app.get('/api/downsampled-data', (req, res) => {
       }
     })
     .on('end', () => {
-      // Downsample the data using your algorithm (e.g., averaging in fixed-size windows)
-      const downsampledData = downsample(data, 1000); // Adjust the window size as needed
+      
+      const downsampledData = downsample(data, 1000); 
 
       res.json(downsampledData);
     })
@@ -37,14 +37,12 @@ app.get('/api/downsampled-data', (req, res) => {
     });
 });
 
-// Your downsampling algorithm
 function downsample(data, windowSize) {
   const downsampledData = [];
 
   for (let i = 0; i < data.length; i += windowSize) {
     const window = data.slice(i, i + windowSize);
 
-    // Calculate the average timestamp and profitPercentage in the window
     const avgTimestamp = window.reduce((sum, point) => sum + point.timestamp.getTime(), 0) / window.length;
     const avgProfitPercentage = window.reduce((sum, point) => sum + point.profitPercentage, 0) / window.length;
 
