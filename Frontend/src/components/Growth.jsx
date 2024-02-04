@@ -7,6 +7,7 @@ const Graph = () => {
   const [downsampledData, setDownsampledData] = useState([]);
   const [chartInstance, setChartInstance] = useState(null);
   const [displayType, setDisplayType] = useState('yearly');
+  const [chartDataAvailable,setChartDataAvailable] = useState(false);
 
   useEffect(() => {
    
@@ -18,7 +19,7 @@ const Graph = () => {
         if (chartInstance) {
           chartInstance.destroy();
         }
-
+        setChartDataAvailable(true);
         createChart(data, displayType);
       })
       .catch(error => console.error('Error fetching downsampled data:', error));
@@ -120,22 +121,41 @@ const Graph = () => {
   const handleToggle = (selectedType) => {
     setDisplayType(selectedType);
   };
+  if(chartDataAvailable){
+    return (
+      <div className='w-[557px] h-[256px] rounded-[16px] p-[20px] gap-[8px] bg-[#FFFFFF]'>
+        <div className='flex justify-between'>
+        <div className='font-[600] text-[20px] leading-[24.2px]'>GROWTH</div>
+        <select className='' id="displayType" value={displayType} onChange={(e) => handleToggle(e.target.value)}>
+          <option value="yearly">Yearly</option>
+          <option value="monthly">Monthly</option>
+        </select>
+        </div>
+        
+        <div className='h-[232px]'>
+        <canvas id="myChart" />
+        </div>  
+       
+      </div>
+    ) 
+  }
   return (
     <div className='w-[557px] h-[256px] rounded-[16px] p-[20px] gap-[8px] bg-[#FFFFFF]'>
       <div className='flex justify-between'>
-      <div className='font-[600] text-[20px] leading-[24.2px]'>GROWTH</div>
-      <select className='' id="displayType" value={displayType} onChange={(e) => handleToggle(e.target.value)}>
-        <option value="yearly">Yearly</option>
-        <option value="monthly">Monthly</option>
-      </select>
-      </div>
+        <div className='font-[600] text-[20px] leading-[24.2px]'>GROWTH</div>
+        <select className='' id="displayType" value={displayType} onChange={(e) => handleToggle(e.target.value)}>
+          <option value="yearly">Yearly</option>
+          <option value="monthly">Monthly</option>
+        </select>
       
-      <div className='h-[232px]'>
-      <canvas id="myChart" />
-      </div>  
-     
+      </div>
+      <div className='flex justify-center items-center'>
+        Loading...
+      </div>
     </div>
-  );
+  )
+  
 };
 
 export default Graph;
+
