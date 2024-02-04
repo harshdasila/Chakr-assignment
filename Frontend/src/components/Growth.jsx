@@ -15,11 +15,12 @@ const Graph = () => {
       .then(response => response.json())
       .then(data => {
         setDownsampledData(data);
-
+        console.log(data,"fetched")
         if (chartInstance) {
           chartInstance.destroy();
         }
         setChartDataAvailable(true);
+
         createChart(data, displayType);
       })
       .catch(error => console.error('Error fetching downsampled data:', error));
@@ -121,6 +122,7 @@ const Graph = () => {
   const handleToggle = (selectedType) => {
     setDisplayType(selectedType);
   };
+
   if(chartDataAvailable){
     return (
       <div className='w-[557px] h-[256px] rounded-[16px] p-[20px] gap-[8px] bg-[#FFFFFF]'>
@@ -158,4 +160,3 @@ const Graph = () => {
 };
 
 export default Graph;
-
