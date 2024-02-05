@@ -1,3 +1,5 @@
+The graph is taking 30-40s for loading please have patience it was working fine in developement. I am looking into it
+
 Live link - https://chakr-assignment-fullstack-1n1e3mwqa-harshdasila.vercel.app/
 
 Screenshots - <img width="1455" alt="Screenshot 2024-01-31 at 3 12 28 PM" src="https://github.com/harshdasila/Chakr-assignment/assets/74102378/097fdcaa-2d28-4289-a802-bd8b0e45a824">
